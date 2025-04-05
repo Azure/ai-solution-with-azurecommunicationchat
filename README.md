@@ -1,28 +1,33 @@
-# Project
+# AI-SOLUTION-WITH-AZURECOMMUNICATIONSERVICECHAT
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This project demonstrates how to build a conversational bot using the [Microsoft Bot Framework](https://dev.botframework.com) integrated with [Semantic Kernel](https://github.com/microsoft/semantic-kernel). The bot retrieves and summarizes responses from an internal knowledge base to answer user questions in natural language.
 
-As the maintainer of this project, please make a few updates:
+## Project Status
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This project is under active development and available for public use. Contributions are welcome. Please see the CONTRIBUTING file for more details.
 
-## Contributing
+## Prerequisites
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+Please follow the below 4 steps in [Add a bot to your chat app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/quickstart-botframework-integration#create-and-deploy-a-bot-in-azure)
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+1. Prerequisites
+2. Create and deploy a bot in Azure
+3. Get a Communication Services resource
+4. Enable the Communication Services Chat channel: please save the Bot ACS Id for later use.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## How to use this repo
+
+After finishing all the steps in "Prerequisites" section, we could start deploying the ChatBot sample to azure.
+Please check the Readme file in the ChatBot project for instructions.
+
+## How to run the demo
+1. Follow the steps in the [Add Chat to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/get-started?pivots=programming-language-csharp&tabs=windows) quickstart to create a chat app and a User Id.
+2. Create a chat thread with 2 participant IDs, the Bot ACS Id created before and the User Id created in step 1. Save the thread id.
+3. Access the [ACS Chat Thread UI](https://azure.github.io/communication-ui-library/?path=/story/composites-chatcomposite-join-existing-chat-thread--join-existing-chat-thread)
+4. Provide the required information to join an existing Chat Thread. Then you can type the below 3 question. AI will retrieve the hardcoded data relevant to the semantics of the user's question and provided an answer based on the data.
+- My user ID is 110. I bought a laptop several days ago. Could you help to track the delivery?
+- I’ve requested a return for my Power Bank. Any updates?
+- I bought Bluetooth Earphones 2 days ago, but they haven’t been shipped yet. Why?
 
 ## Trademarks
 
