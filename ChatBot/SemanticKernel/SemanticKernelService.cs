@@ -22,9 +22,13 @@ namespace ChatBot.SemanticKernel
             var kernelBuilder = Kernel.CreateBuilder();
 
             // Step 2: Add Azure OpenAI chat completion to the Kernel
-            var modelId = "ai-integration-fhl";
-            var endpoint = "https://ai-integration-fhl.openai.azure.com/";
-            var apiKey = "137bf3e02a2c42b8acc2782200891588";
+            // When using this sample code, please make sure to provide the following parameters:
+            // - modelId: The name of your deployed model in Azure OpenAI (e.g., gpt-35-turbo)
+            // - endpoint: The endpoint URL of your Azure OpenAI resource (starts with https)
+            // - apiKey: The access key for your Azure OpenAI service
+            var modelId = "";
+            var endpoint = "";
+            var apiKey = "";
             kernelBuilder.AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);
 
             // Step 3: Add the plugin to the kernel
