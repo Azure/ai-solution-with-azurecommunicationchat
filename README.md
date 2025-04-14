@@ -24,9 +24,9 @@ Please follow [the ChatBot Readme](./ChatBot/README.md) to deploy the ChatBot sa
 2. Create a chat thread with two participant IDs, the Bot ACS Id created during the prerequisite step and the User Id created in step 1. Save the thread id.
 3. Access the [ACS Chat Thread UI](https://azure.github.io/communication-ui-library/?path=/story/composites-chatcomposite-join-existing-chat-thread--join-existing-chat-thread)
 4. Provide the required information to join an existing Chat Thread. Below are example questions you can ask your app. AI will retrieve the data relevant to the semantics of the user's question and provided an answer based on the data.
-* question 1: My user ID is 110. I bought a laptop several days ago. Could you help to track the delivery?
-* question 2: I've requested a return for my Power Bank. Any updates?
-* question 3: I bought Bluetooth Earphones 2 days ago, but they haven’t been shipped yet. Why?
+   - question 1: My user ID is 110. I bought a laptop several days ago. Could you help to track the delivery?
+   - question 2: I've requested a return for my Power Bank. Any updates?
+   - question 3: I bought Bluetooth Earphones 2 days ago, but they haven’t been shipped yet. Why?
 
 ## Trademarks
 
